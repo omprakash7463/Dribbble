@@ -1,0 +1,218 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+    font-family: arial;
+  
+}
+
+body{
+    width:100%; 
+    background-image: url("rain3.jpg");
+    background-size:cover;
+}
+
+
+/* style for logo */
+.logo{
+    width:200px;
+    height:45px;
+    margin:15px;
+    display:flex;
+    background-color: white;
+    justify-content: center;
+    border-radius:5px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 100, 169, 0.493),
+    -10px -10px 10px -1px rgba(197, 195, 195, 0.815);
+    cursor:pointer;
+}
+
+
+h3 span{
+   display:table-cell;
+   animation:animate 2s linear infinite;
+}
+
+h3 span:nth-child(1){
+    animation-delay: 0s;
+}
+h3 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h3 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+h3 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+h3 span:nth-child(5){
+    animation-delay: 1s;
+}
+h3 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h3 span:nth-child(7){
+    animation-delay: 1.5s;
+}
+h3 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+
+@keyframes animate{
+    0%,100%{
+        color:rgb(195, 0, 255);
+        filter:blur(2px);
+       
+       text-shadow: 1px 1px 1px #00b3ff,
+                    1px 2px 1px #00b3ff,
+                    1px 3px 1px #00b3ff,
+                    1px 4px 1px #00b3ff,
+                    1px 5px 1px #00b3ff,
+                    1px 6px 1px #00b3ff,
+                    1px 7px 1px #00b3ff,
+                    1px 8px 1px #00b3ff,
+                    1px 9px 1px #00b3ff,
+                    1px 10px 1px #00b3ff,
+                1px 18px 6px white;
+                
+    }
+    5%,95%{
+        color:rgba(0, 0, 0, 0.719);
+        filter:blur(0px);
+        text-shadow: none;
+    }
+}
+
+span{
+    font-size:35px;
+    font-weight:900;
+}
+
+
+.box1{
+    width:100vw;
+    height:100vh;
+    display:flex;
+}
+
+/* style for running video section */
+
+.img-sec2{
+    width:30vw;
+    overflow:hidden;
+}
+
+.text{
+    position:absolute;
+    margin:40px 0px 0px 30px;
+    color:rgb(66, 41, 10);
+}
+.text h3{
+    font-family:cursive;
+    color:rgb(255, 255, 255);
+   margin-left:40%;
+}
+
+
+.signup-sec{
+    width:70vw;
+    margin:50px auto;
+}
+
+/* style for signup section */
+
+
+.container h3{
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+
+
+.terms{
+    font-size:12px;
+}
+
+#create-acc{
+    width:200px;
+    background-color:rgba(85, 241, 12, 0.637);
+    backdrop-filter: blur(10px); 
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nextbtn{
+    display:flex;
+    justify-content:center;
+}
+
+/* style for back button */
+
+#back-btn2 {
+    position:absolute;
+    top:-20px;
+    font-size:30px;
+    padding:10px;
+    margin:30px;
+    background:#d2d4d6c9;
+    border-radius: 50px;
+    color:#03fafa;
+    box-shadow: 10px 10px 10px -1px rgba(10, 100, 169, 0.493),
+     -10px -10px 10px -1px rgba(255, 255, 255, 0.534);
+     cursor:alias;
+}
+ 
+ #back-btn2:active{
+     border:rgb(75, 73, 73) 1px solid;
+}
+
+
+
+
+@media(max-width:900px){
+    .img-sec2{
+        display:none;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    #back-btn{
+       right:0px;
+    }
+}
+
+@media(min-width:800px){
+    .container{
+        min-width:400px;
+        width:45%;
+        padding:3%;
+        margin:20px auto;
+        border-radius: 10px;
+        background-color:rgba(121, 162, 209, 0.178);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.459);
+    }
+
+}    
+
+@media(max-width:799px){
+    body{
+        background-color:rgba(121, 162, 209, 0.397);
+        backdrop-filter: blur(10px); 
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #back-btn2{
+        left:0px;
+        margin-top:21px;
+    }
+    
+};
+
+
+
+
